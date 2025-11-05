@@ -9,7 +9,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([560274.821868, 5705828.069970, 706894.157398, 5804320.900939], map.getSize());
+map.getView().fit([573148.459437, 5715102.028385, 646209.625960, 5764074.977834], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
@@ -664,8 +664,8 @@ map.addControl(Title)
 //layer search
 
 var searchLayer = new SearchLayer({
-    layer: lyr_ProjetdedfinitionVIARHONA_9,
-    colName: 'Identifian',
+    layer: lyr_ProjetdesignalisationVIARHONA_9,
+    colName: 'IDENTIFIANT',
     zoom: 10,
     collapsed: true,
     map: map,
