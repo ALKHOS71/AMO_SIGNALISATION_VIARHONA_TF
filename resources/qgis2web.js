@@ -9,7 +9,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([573148.459437, 5715102.028385, 646209.625960, 5764074.977834], map.getSize());
+map.getView().fit([543970.124411, 5706791.251718, 701186.163760, 5812291.410238], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
@@ -474,7 +474,7 @@ var Title = new ol.control.Control({
     element: (() => {
         var titleElement = document.createElement('div');
         titleElement.className = 'top-right-title ol-control';
-        titleElement.innerHTML = '<h2 class="project-title">PROJET SIGNALISATION VIARHONA</h2>';
+        titleElement.innerHTML = '<h2 class="project-title">PROJET DE SIGNALISATION VIARHONA</h2>';
         return titleElement;
     })(),
     target: 'top-right-container'
@@ -664,8 +664,8 @@ map.addControl(Title)
 //layer search
 
 var searchLayer = new SearchLayer({
-    layer: lyr_ProjetdesignalisationVIARHONA_9,
-    colName: 'IDENTIFIANT',
+    layer: lyr_ProjetdesignalisationVIARHONA_10,
+    colName: 'Identifi_1',
     zoom: 10,
     collapsed: true,
     map: map,
